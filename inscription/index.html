@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sing Up</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <section class="singUp">
+        <header>
+            <h1>Sing Up</h1>
+            <p>it's quick and easy</p>
+        </header>
+        <form class="formsignUp" method="POST">
+            <input type="text" placeholder="First name">
+            <input type="text" placeholder="Surname">
+            <input class="full" type="email" placeholder="Mobile numbre or email address">
+            <input class="full" type="password" placeholder="New password">
+            <p class="date">Date of birth &nbsp; <span>?</span> </p>
+            <select name="selectDay" id="Day">
+                <option value="day">Choose Day</option>
+            </select>
+            <select name="selectMonth" id="Month">
+                <option value="month">Choose Month</option>
+            </select>
+            <select name="selectYear" id="Year">
+                <option value="year">Choose Year</option>
+            </select>
+            <p class="gendre">Gendre &nbsp; <span>?</span></p>
+            <div class="radioContainner">
+                <label for="male">Male</label>
+                <input type="radio" id="male" name="gender" value="male" class="radio">
+            </div>
+            <div class="radioContainner">
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="female" class="radio">
+            </div>
+            <div class="radioContainner">
+            <label for="other">Custom</label>
+            <input type="radio" id="custom" name="gender" value="custom" class="radio">
+            </div>
+            <p class="terms">
+                By clicking Sign Up, you agree to our <a href="#">Terms</a>, 
+                <a href="#">Data Policy</a> and <a href="#">Cookie Policy</a>. 
+                You may receive SMS notifications from us and can opt out at any time.
+            </p>
+            <div id="Sign">
+                <a class="Sign" href="../index.html" target="_blank">Sign Up</a>
+            </div>
+        </form>
+    </section>
+    <script src="./file.js"></script>
+</body>
+</html>

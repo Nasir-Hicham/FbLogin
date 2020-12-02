@@ -1,0 +1,350 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background-color: #F0F2F5;
+}
+section{
+    width: 75%;
+    margin: 130px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+#text{
+    width: 55%;
+    margin-right: 50px;
+    margin-top: -130px;
+}
+#text .logo img{
+    width: 250px;
+}
+#text p{
+    margin-top: -10px;
+    margin-left: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    color: #000000;
+    line-height: 37px;
+}
+#form{
+    width: 40%;
+    background-color: #FFFFFF;
+    box-shadow: -4px 5px 12px #d8d6d6;
+    display: block;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+}
+form .login, input{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 0px;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    padding-left: 10px;
+    font-size: 18px;
+    color: black;
+    border: 1px solid rgb(98, 114, 250);
+}
+form .login:first-of-type{
+    margin-top: 15px;
+}
+form #sub{
+    background-color: #166FE5;
+    color: white;
+    border: 0;
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+form #sub:hover{
+    background-color: #166FE5; 
+}
+form .forget{
+    color: #18A1F6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+form .forget:hover{
+    border-bottom:1px solid #18A1F6;
+}
+form .border{
+    margin-top: 10px;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 50px;
+}
+form .new{
+    background-color: #40b429;
+    padding: 10px 22px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 6px;
+    border: 0;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+form .new:hover{
+    background-color: #36A420;
+}
+form .new a{
+    color: white;
+}
+#form p{
+    position: absolute;
+    bottom: -50px;
+    right: 50px;
+    color: black;
+}
+#form p a{
+    color: black;
+    font-weight: bold;
+}
+#form p a:hover{
+    border-bottom: 1px solid black;
+}
+@media (max-width: 1100px){
+    section{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    section .logo{
+        text-align: center;
+    }
+    section #text{
+        text-align: center;
+        width: 80%;
+        margin: auto;
+    }
+    section #text p{
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 50px;
+        margin-left: 0px;
+    }
+    section #form{
+        width: 80%;
+        margin: auto;
+    }
+    section #form p{
+        position: static;
+        font-size: 12px;
+    }
+    section.singUp{
+        width: 60%;
+    }
+    
+}
+@media (max-width: 900px){
+    section.singUp{
+        width: 75%;
+    }
+}
+@media (max-width: 700px ){
+    section #form input{
+        height: 40px;
+        font-size: 12px;
+    }
+    section #form .forget{
+        font-size: 12px;
+    }
+    section #form .new{
+        font-size: 14px;
+        padding: 6px 18px;
+    }
+    section.singUp header{
+        text-align: center;
+    }
+    section.singUp header h1{
+        font-size: 30px;
+    }
+    section.singUp{
+        width: 90%;
+    }
+    section.singUp form input{
+        height: 40px;
+        width: 100%;
+        font-size: 13px;
+    }
+    section.singUp form p{
+        font-size: 14px;
+        margin-bottom: 2px;
+    }
+    section.singUp form select{
+        height: 30px;
+        font-size: 16px;
+    }
+    section.singUp form .gendre, section.singUp form .date{
+        padding-bottom: 6px;
+    }
+    section.singUp form .radioContainner{
+        display: inline;
+        margin-right: 2px;
+        padding: 3px 2px;
+    }
+    section.singUp form .radioContainner label{
+        padding: 0px 3px;
+        vertical-align: 0;
+        font-size: 15px;
+    }
+    section.singUp form .radio{
+            width: 12px;
+            vertical-align: -15px;
+            margin-left: 0px;
+            padding: 0px 2px;
+            margin: 0px;
+    }
+    section.singUp form .terms{
+        text-align: justify;
+    }
+}
+@media (max-width: 305px){
+    section.singUp form select{
+        height: 30px;
+        font-size: 13px;
+    }
+    section.singUp form .radioContainner label{
+        padding: 0px 3px;
+        vertical-align: 0;
+        font-size: 12px;
+    }
+    section.singUp form .radio{
+        width: 10px;
+        vertical-align: -15px;
+        margin-left: 0px;
+        padding: 0px 2px;
+        margin: 0px;
+    }
+    section.singUp form .terms{
+        font-size: 12px;
+    }
+}
+
+.singUp{
+    width: 40%;
+    margin: 80px auto;
+    background-color: white;
+    box-shadow: -4px 5px 12px #d8d6d6;
+}
+header{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    border-bottom: 1px solid lightgray;
+}
+header h1{
+    font-size: 36px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.formsignUp{
+    margin-top: 120px;
+    padding: 20px;
+}
+form input:first-of-type{
+    margin-right: 20px;
+}
+form input{
+    margin-right: 0px;
+    height: 40px;
+    width: calc(50% - 20px);
+}
+form .full{
+    width: 97%
+}
+
+form p{
+    padding-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+form p span{
+    padding: 0px 7px;
+    background-color: lightslategray;
+    border-radius: 50%;
+    color: white;
+    font-weight: bold;
+}
+form select{
+    border: 1px solid lightgray;
+    width: 32% ;
+    height: 40px;
+    font-size: 17px;
+    font-weight: 400;
+    border-radius: 8px;
+    padding-left: 10px;
+}
+form .gendre{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+form .radioContainner{
+    display: inline-block;
+    width: calc(33% - 11px);
+    height: 40px;
+    margin-right: 10px;
+    border: 2px solid lightgray;
+    border-radius: 8px;
+}
+form label{
+    padding-left: 10px;
+    padding-right: 40px;
+    vertical-align: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 17px;
+}
+form .radio{
+    margin-right: 0px;
+    width: 15px;
+}
+form .terms{
+    margin-top: 5px;
+    font-size: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(187, 186, 186);
+    font-weight: 600;
+}
+form .terms a{
+    color:  #155983;
+}
+form .terms a:hover{
+    border-bottom: 1px solid #155983;
+}
+form #Sign{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+form .Sign{
+    background-color: #40b429;
+    padding: 10px 50px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 6px;
+    border: 0;
+    color: white;
+}
+form .Sign:hover{
+    background-color: #36A420;
+}
+
+
+
+
+
+
+
